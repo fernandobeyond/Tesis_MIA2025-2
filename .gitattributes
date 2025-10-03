@@ -1,2 +1,4 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
+data/raw/dataset_ddos.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/ddos_balanceado.csv filter=lfs diff=lfs merge=lfs -text
