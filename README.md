@@ -14,12 +14,14 @@ El conjunto de datos de este proyecto es una captura de tráfico de red proporci
 La recolección de datos se realizó durante la segunda semana de mayo de 2025, centrándose exclusivamente en el horario nocturno, desde las 10:00 p.m. hasta las 6:00 a.m. Este periodo fue seleccionado por ser una ventana crítica donde, a pesar del menor volumen de tráfico legítimo, los sistemas de monitoreo y respuesta suelen ser más vulnerables.
 
 * **Descripción:**
+
 * El dataset capturado contiene un total de 2,670,479 flujos de red y 20 características por flujo.
 * Las variables incluyen métricas clave de la comunicación en red, como la duración del flujo (Flow Duration), el conteo total de paquetes (Total Fwd Packets) y la etiqueta de clasificación (Attack_Label), que distingue el tráfico anómalo del normal.
 * Para los fines de este estudio, la variable Attack_Label ha sido binarizada, asignando el valor 0 al tráfico BENIGN (benigno) y 1 a cualquier tipo de ATTACK (ataque).
 
 * **Versión utilizada:**
-* **Periodo de captura:** Segunda semana de mayo de 2025 (del 05/05/2025 al 11/05/2025).
+
+  * **Periodo de captura:** Segunda semana de mayo de 2025 (del 05/05/2025 al 11/05/2025).
 
 ## Requisitos
 
