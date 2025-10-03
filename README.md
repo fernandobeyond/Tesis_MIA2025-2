@@ -15,9 +15,9 @@ La recolección de datos se realizó durante la segunda semana de mayo de 2025, 
 
 * **Descripción:**
 
-* El dataset capturado contiene un total de 2,670,479 flujos de red y 20 características por flujo.
-* Las variables incluyen métricas clave de la comunicación en red, como la duración del flujo (Flow Duration), el conteo total de paquetes (Total Fwd Packets) y la etiqueta de clasificación (Attack_Label), que distingue el tráfico anómalo del normal.
-* Para los fines de este estudio, la variable Attack_Label ha sido binarizada, asignando el valor 0 al tráfico BENIGN (benigno) y 1 a cualquier tipo de ATTACK (ataque).
+  * El dataset capturado contiene un total de 2,670,479 flujos de red y 20 características por flujo.
+  * Las variables incluyen métricas clave de la comunicación en red, como la duración del flujo (Flow Duration), el conteo total de paquetes (Total Fwd Packets) y la etiqueta de clasificación (Attack_Label), que distingue el tráfico anómalo del normal.
+  * Para los fines de este estudio, la variable Attack_Label ha sido binarizada, asignando el valor 0 al tráfico BENIGN (benigno) y 1 a cualquier tipo de ATTACK (ataque).
 
 * **Versión utilizada:**
 
