@@ -1,0 +1,8 @@
+2025-10-02 10:00:01 INFO  Loading dataset: /drive/tesis_UNI/ddos_balanceado.csv
+2025-10-02 10:01:23 INFO  Dataset shape: (200000, 80)
+2025-10-02 10:05:12 INFO  Train split: 140000 rows | Val: 30000 | Test: 30000
+2025-10-02 10:06:00 INFO  Balanced train via RandomUnderSampler -> 60000 pos / 60000 neg
+2025-10-02 10:30:15 INFO  XGBoost training finished (val PR-AUC: 0.87 ROC-AUC: 0.96)
+2025-10-02 11:10:40 INFO  CNN-LSTM training finished (val PR-AUC: 0.84 ROC-AUC: 0.95)
+2025-10-02 11:20:05 INFO  Blending meta-learner trained. Test PR-AUC: 0.90 | ROC-AUC: 0.97
+2025-10-02 11:20:06 INFO  Models saved: models/model_xgb.joblib, models/model_cnnlstm.keras, models/model_meta.joblib
