@@ -1,12 +1,30 @@
-# DDoS Detection - Repository (simulated)
+# SISTEMA DE DETECCIÓN DE ATAQUES DDOS BASADO EN DEEP LEARNING EN ENTORNOS DE RED
 
-Estructura mínima del repositorio para el proyecto de detección DDoS.
+Este repositorio contiene el código y los recursos para el preprocesamiento de datos del proyecto de tesis enfocado en la detección de ataques de denegación de servicio distribuido (DDoS) utilizando técnicas de Deep Learning.
 
-- `data/` : raw, interim, processed (ej. ddos_balanceado.csv en processed)
-- `notebooks/` : notebooks exploratorios
-- `src/` : scripts para preprocess, dataset, models, train, utils
-- `logs/` : logs de ejecución y métricas
-- `models/`: artefactos guardados (xgb, cnnlstm, meta)
+## Autores / Equipo
 
-Este repositorio está pensado como plantilla para reproducir el pipeline descrito
-en los papers: XGBoost (tabular) + CNN1D-LSTM (secuencias) + blending/meta-learner.
+* **Autor(es):** `[Nombre del Autor 1]`, `[Nombre del Autor 2]`
+* **Correo / GitHub:** `[correo@dominio.com / usuario-github]`
+
+## Dataset
+
+El conjunto de datos utilizado para este proyecto contiene un registro de flujos de red, con características extraídas para diferenciar entre tráfico benigno y diversos tipos de ataques DDoS.
+
+* **Fuente:** El dataset original, `dataset_ddos.csv`, se encuentra alojado en una ruta privada de Google Drive. Se recomienda al autor añadir el enlace a la fuente pública si está disponible (ej. Canadian Institute for Cybersecurity - CIC-DDoS2019).
+* **Descripción:**
+    * El dataset original consta de **2,670,479 registros** y **20 variables**.
+    * Las variables principales incluyen características de flujo de red como `Flow Duration`, `Total Fwd Packets`, `Fwd Packet Length Max`, `Flow Bytes/s`, y la etiqueta de clasificación `Attack_Label`.
+    * La variable objetivo `Attack_Label` fue transformada a una clasificación binaria (0 para `BENIGN` y 1 para `ATTACK`).
+* **Versión utilizada:**
+    * **Fecha:** `[Indicar la fecha de descarga o versión del dataset]`
+    * **Hash:** `[Indicar el hash SHA256 del archivo para garantizar la reproducibilidad]`
+
+## Requisitos
+
+Para ejecutar el notebook de preprocesamiento, es necesario contar con las siguientes librerías de Python. Puede instalarlas utilizando `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
