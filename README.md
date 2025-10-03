@@ -9,16 +9,17 @@ Este repositorio contiene el código y los recursos para el preprocesamiento de 
 
 ## Dataset
 
-El conjunto de datos utilizado para este proyecto contiene un registro de flujos de red, con características extraídas para diferenciar entre tráfico benigno y diversos tipos de ataques DDoS.
+El conjunto de datos de este proyecto es una captura de tráfico de red proporcionada por una importante empresa de telecomunicaciones en Perú. Por motivos de confidencialidad, la identidad de la empresa se mantiene anónima.
 
-* **Fuente:** El dataset original, `dataset_ddos.csv`, se encuentra alojado en una ruta privada de Google Drive. Se recomienda al autor añadir el enlace a la fuente pública si está disponible (ej. Canadian Institute for Cybersecurity - CIC-DDoS2019).
+La recolección de datos se realizó durante la segunda semana de mayo de 2025, centrándose exclusivamente en el horario nocturno, desde las 10:00 p.m. hasta las 6:00 a.m. Este periodo fue seleccionado por ser una ventana crítica donde, a pesar del menor volumen de tráfico legítimo, los sistemas de monitoreo y respuesta suelen ser más vulnerables.
+
 * **Descripción:**
-    * El dataset original consta de **2,670,479 registros** y **20 variables**.
-    * Las variables principales incluyen características de flujo de red como `Flow Duration`, `Total Fwd Packets`, `Fwd Packet Length Max`, `Flow Bytes/s`, y la etiqueta de clasificación `Attack_Label`.
-    * La variable objetivo `Attack_Label` fue transformada a una clasificación binaria (0 para `BENIGN` y 1 para `ATTACK`).
+* El dataset capturado contiene un total de 2,670,479 flujos de red y 20 características por flujo.
+* Las variables incluyen métricas clave de la comunicación en red, como la duración del flujo (Flow Duration), el conteo total de paquetes (Total Fwd Packets) y la etiqueta de clasificación (Attack_Label), que distingue el tráfico anómalo del normal.
+* Para los fines de este estudio, la variable Attack_Label ha sido binarizada, asignando el valor 0 al tráfico BENIGN (benigno) y 1 a cualquier tipo de ATTACK (ataque).
+
 * **Versión utilizada:**
-    * **Fecha:** `[Indicar la fecha de descarga o versión del dataset]`
-    * **Hash:** `[Indicar el hash SHA256 del archivo para garantizar la reproducibilidad]`
+* **Periodo de captura:** Segunda semana de mayo de 2025 (del 05/05/2025 al 11/05/2025).
 
 ## Requisitos
 
@@ -48,7 +49,7 @@ El proyecto se organiza de la siguiente manera para mantener la claridad y facil
 │       └── ddos_balanceado.csv     # Dataset balanceado y listo para el modelo
 │
 ├── notebooks/
-│   └── 01_EDA_y_Preprocesamiento.ipynb  # Notebook con el análisis y balanceo
+│   └── DDos_attack.ipynb  # Notebook con el análisis y balanceo
 │
 ├── src/
 │   └── ...                         # Scripts de Python para funciones auxiliares (si aplica)
@@ -73,7 +74,7 @@ pip install -r requirements.txt
 ```
 3. Ubicar el dataset: Coloque el archivo dataset_ddos.csv en la carpeta data/raw/.
 
-4. Ejecutar el notebook: Abra y ejecute todas las celdas del notebook notebooks/01_EDA_y_Preprocesamiento.ipynb en un entorno como Jupyter Lab o Google Colab.
+4. Ejecutar el notebook: Abra y ejecute todas las celdas del notebook notebooks/DDos_attack.ipynb en un entorno como Jupyter Lab o Google Colab.
 
 ## Resultados Esperados
 Al ejecutar completamente el notebook de preprocesamiento, el pipeline generará el siguiente resultado:
