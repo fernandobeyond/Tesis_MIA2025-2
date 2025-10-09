@@ -109,7 +109,15 @@ ROC-AUC: 0.99959 | PR-AUC: 0.99841
 ```
 ### Distribuciones y relaciones
 1. Distribución de la variable target
+
 ![Distribución de la variable target](./src/img/graf01.png)
 
-Riesgos: desbalance, leakage, drift, sesgos.
+2. Matriz de correlación
+
+![Matriz de correlación](./src/img/graf02.png)
+
+3. Top categorías de Attack_Label
+
+![Top categorías de Attack_Label](./src/img/graf03.png)
+
 Conclusiones accionables (minimo 2)
