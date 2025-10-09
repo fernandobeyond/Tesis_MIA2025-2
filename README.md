@@ -120,4 +120,6 @@ ROC-AUC: 0.99959 | PR-AUC: 0.99841
 
 ![Top categorías de Attack_Label](./src/img/graf03.png)
 
-Conclusiones accionables (minimo 2)
+### Conclusiones accionables
+- Aunque el modelo es muy bueno detectando amenazas, la cantidad de falsos positivos podría generar una "fatiga de alertas" en un entorno real. La acción principal debe ser reducir los falsos positivos sin sacrificar significativamente la capacidad de detección.
+- La redundancia de características aumenta la complejidad computacional del modelo y el riesgo de sobreajuste (overfitting), sin necesariamente aportar más poder predictivo. Es crucial reducir la dimensionalidad del conjunto de datos para crear un modelo más eficiente y generalizable.
