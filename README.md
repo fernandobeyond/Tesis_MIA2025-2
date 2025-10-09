@@ -82,3 +82,34 @@ pip install -r requirements.txt
 Al ejecutar completamente el notebook de preprocesamiento, el pipeline generará el siguiente resultado:
 - Un archivo llamado ddos_balanceado.csv en la carpeta data/processed/.
 - Este archivo contendrá un subconjunto de los datos originales, con las clases benigna y ataque perfectamente balanceadas (50%-50%) mediante la técnica de submuestreo (Undersampling). El dataset resultante tiene 1,116,322 registros.
+
+## EDA + accionables
+### Reporte de Clasificación (Conjunto de Prueba)
+
+|               | precision | recall | f1-score | support |
+| :------------ | :-------- | :----- | :------- | :------ |
+| **BENIGN** | 0.9990    | 0.9895 | 0.9942   | 315737  |
+| **ATTACK** | 0.9617    | 0.9962 | 0.9786   | 83320   |
+|               |           |        |          |         |
+| **accuracy** |           |        | 0.9909   | 399057  |
+| **macro avg** | 0.9803    | 0.9929 | 0.9864   | 399057  |
+| **weighted avg**| 0.9912    | 0.9909 | 0.9910   | 399057  |
+
+### Matriz de Confusión (Conjunto de Prueba)
+
+```
+[[312428   3309]
+ [   315  83005]]
+```
+
+### Otras Métricas
+
+```
+ROC-AUC: 0.99959 | PR-AUC: 0.99841
+```
+### Distribuciones y relaciones
+1. Distribución de la variable target
+![Distribución de la variable target](./src/img/graf01.png)
+
+Riesgos: desbalance, leakage, drift, sesgos.
+Conclusiones accionables (minimo 2)
