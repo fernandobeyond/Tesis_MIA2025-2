@@ -90,7 +90,6 @@ Al ejecutar completamente el notebook de preprocesamiento, el pipeline generará
 | :------------ | :-------- | :----- | :------- | :------ |
 | **BENIGN** | 0.9990    | 0.9895 | 0.9942   | 315737  |
 | **ATTACK** | 0.9617    | 0.9962 | 0.9786   | 83320   |
-|               |           |        |          |         |
 | **accuracy** |           |        | 0.9909   | 399057  |
 | **macro avg** | 0.9803    | 0.9929 | 0.9864   | 399057  |
 | **weighted avg**| 0.9912    | 0.9909 | 0.9910   | 399057  |
