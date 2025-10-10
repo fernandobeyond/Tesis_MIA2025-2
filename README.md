@@ -13,6 +13,8 @@ El conjunto de datos de este proyecto es una captura de tráfico de red proporci
 
 La recolección de datos se realizó durante la segunda semana de mayo de 2025, centrándose exclusivamente en el horario nocturno, desde las 10:00 p.m. hasta las 6:00 a.m. Este periodo fue seleccionado por ser una ventana crítica donde, a pesar del menor volumen de tráfico legítimo, los sistemas de monitoreo y respuesta suelen ser más vulnerables.
 
+Al ser datasets pesados, estos fueron subidos a Google Drive: https://drive.google.com/drive/folders/1Fa_mfS_uLR4_5IYZnFuznRgaOu393JMt?usp=sharing
+
 * **Descripción:**
 
   * El dataset capturado contiene un total de 2,670,479 flujos de red y 20 características por flujo.
@@ -120,5 +122,5 @@ ROC-AUC: 0.99959 | PR-AUC: 0.99841
 ![Top categorías de Attack_Label](./src/img/graf03.png)
 
 ### Conclusiones accionables
-- Aunque el modelo es muy bueno detectando amenazas, la cantidad de falsos positivos podría generar una "fatiga de alertas" en un entorno real. La acción principal debe ser reducir los falsos positivos sin sacrificar significativamente la capacidad de detección.
-- La redundancia de características aumenta la complejidad computacional del modelo y el riesgo de sobreajuste (overfitting), sin necesariamente aportar más poder predictivo. Es crucial reducir la dimensionalidad del conjunto de datos para crear un modelo más eficiente y generalizable.
+- Un excelente siguiente paso sería verificar qué tan bien se comporta este modelo con datos que no ha visto nunca, simulando un entorno más cercano a la realidad.
+- Sería interesante explorar si se puede lograr un rendimiento similar con un modelo un poco más simple. Un modelo más ligero sería más rápido, fácil de mantener y de explicar a otras personas.
