@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+*.env
+.env
+
+# Archivos compilados y librerías
+*.so
+*.o
+*.a
+
+# Específicos de tu proyecto
+ptxas
+server
