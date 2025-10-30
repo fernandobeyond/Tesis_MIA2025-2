@@ -7,6 +7,10 @@ __pycache__/
 venv/
 *.env
 .env
+rtxenv/
+
+# Ignorar archivos del sistema operativo macOS
+.DS_Store
 
 # Archivos compilados y librerías
 *.so
