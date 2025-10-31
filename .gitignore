@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+*.env
+.env
+rtxenv/
+
+# Ignorar archivos del sistema operativo macOS
+.DS_Store
+
+# Archivos compilados y librerías
+*.so
+*.o
+*.a
+
+# Específicos de tu proyecto
+ptxas
+server
